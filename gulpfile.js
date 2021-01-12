@@ -25,7 +25,7 @@ const cssnano = require("cssnano");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const useref = require('gulp-useref');
-const uglify = require('gulp-uglify');
+const terser = require('gulp-terser');
 const gulpIf = require('gulp-if');
 const wait = require('gulp-wait');
 const notify = require('gulp-notify');
@@ -71,7 +71,7 @@ function modulesJS() {
 		.pipe(wait(10))
 		.pipe(plumbError())
 		.pipe(concat("bundle.min.js"))
-		.pipe(uglify())
+		.pipe(terser())
 		.pipe(gulp.dest(paths.js.dest))
 		.pipe(notify({ message: "JS Libraries Compiled Successfully!" }));
 }
@@ -155,7 +155,7 @@ function fonts() {
 function distFiles() {
 	return gulp.src(paths.html.src)
 		.pipe(useref())
-		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.js', terser()))
 		.pipe(gulp.src('*.css'))
 		.pipe(gulp.dest(paths.html.dest));
 }
