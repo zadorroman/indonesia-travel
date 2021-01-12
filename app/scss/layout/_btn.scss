@@ -1,0 +1,21 @@
+.btn {
+    transition: all .5s;
+    font: 700 16px/19px $font;
+
+    &--header {
+        padding: 25px 38px;
+        background-color: $dblue;
+        color: $white;
+        border-radius: 0;
+        border: transparent;
+    }
+
+    &:hover {
+        
+        border: transparent;
+        text-decoration: none;
+        box-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
+        background-color: $white;
+
+    }
+}

@@ -1,0 +1,34 @@
+.select {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+    text-transform: uppercase;
+    color: $lblue;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    &__item {
+
+    }
+
+    &__text {
+
+    }
+
+    &__icon {
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+    }
+
+    i[class^="icon-"] {
+        margin: 0 20px;
+    }
+    .icon-arrow {
+        font-size: 15px;
+    }
+
+}

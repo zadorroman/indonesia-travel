@@ -1,0 +1,87 @@
+.header {
+    min-height: 100vh;
+    background: url('../images/indonesia/header-bg.jpg') no-repeat top center;
+    background-size: cover;
+    position: relative;
+
+
+
+
+    &--bali {
+        background-image: url('../../images/bali/header-bg.jpg');
+    }
+
+    &--plan {
+        background-image: url('../../images/plan/header-bg.jpg');
+    }
+
+    &--nusa {
+        background-image: url('../../images/nusa-da/header-bg.jpg');
+        min-height: 450px;
+    }
+
+    &--look {
+        background-image: url('../../images/look/header-bg.jpg');
+    }
+
+    &--gallery {
+        background-image: none;
+        min-height: auto;
+    }
+
+    &--faq {
+        background-image: url('../../images/faq/header-bg.jpg');
+        min-height: 230px;
+    }
+
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+
+    }
+
+    &__wrap {
+        background-color: $dblue;
+        @include size(100%, auto);
+        position: fixed;
+    }
+
+    &__block {
+        background-color: $back;
+        @include pos($l:0, $b: 11.1vh);
+        @include size(100%, auto);
+    }
+
+    &__title {
+        color: $back;
+        text-transform: uppercase;
+        font: 700 120px/146px $mons;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 30vh;
+
+        &--plan {
+            font-size: 60px;
+            line-height: 72px;
+            text-align: left;
+            width: 50%;
+            text-transform: none;
+            margin-top: 15vh;
+        }
+
+        &--look {
+            font:700 60px/72px $font;
+            text-transform: none;
+        }
+    }
+
+    &__subtitle {
+        font: 400 36px/46px $mons;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 13vh;
+    }
+}
