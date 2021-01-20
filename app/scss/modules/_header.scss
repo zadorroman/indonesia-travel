@@ -48,6 +48,7 @@
         background-color: $dblue;
         @include size(100%, auto);
         position: fixed;
+        z-index: 9999999999;
     }
 
     &__block {

@@ -1,0 +1,27 @@
+.tours {
+    background-color: $back;
+    color: $dblue;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px; 
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 65px;
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: 52px;
+        text-decoration: underline;
+        color: $dblue;
+        font-weight: 400;
+        
+    }
+}
