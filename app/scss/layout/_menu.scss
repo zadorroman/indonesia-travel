@@ -14,21 +14,40 @@
         color: $white;
         transition: all .5s;
         display: inline-block;
+
+        &.active {
+            position: relative;
+
+            &::before {
+                @include size(100%, 2px);
+                @include pos($b:-3px, $l:0);
+                background-color: #fff;
+                content: '';
+                transition: all .3s;
+            }
+        }
+
+        @media (min-width: 768px) {
+            &:hover {
+                // background: rgb(241,37,6);
+                // background: linear-gradient(180deg, rgba(241,37,6,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(0,0,0,1) 100%);            -webkit-background-clip: text;
+                color: transparent;    
+                text-decoration: none;
+                transform: scale(1.6);
+                text-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
+    
+                &.active::before {
+                    opacity: 0;
+                }
+            }
+    
+            &:active {
+                color: #eb452b;
+                text-shadow: none;
+            }
+        }
         
 
-        &:hover {
-            // background: rgb(241,37,6);
-            // background: linear-gradient(180deg, rgba(241,37,6,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(0,0,0,1) 100%);            -webkit-background-clip: text;
-            color: transparent;    
-            text-decoration: none;
-            transform: scale(1.6);
-            text-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b
-            // text-shadow: -1px -1px 0 #000, 0 0 0 #fff, 1px 1px 0 #eb452b
-        }
 
-        &:active {
-            color: #eb452b;
-            text-shadow: none;
-        }
     }
 }

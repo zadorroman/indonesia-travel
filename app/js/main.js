@@ -20,6 +20,17 @@
 			centerMode: false,
 			variableWidth: true,
 			infinite: false,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						variableWidth: true,
+						swipe: true,
+						arrows: false, // включение стрелок
+					}
+				}]
 		});
 		function setProgress(index) {
 			const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
@@ -48,6 +59,17 @@
 			centerMode: false,
 			variableWidth: true,
 			infinite: false,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						variableWidth: true,
+						swipe: true,
+						arrows: false, // включение стрелок
+					}
+				}]
 		});
 		function setProgress2(index) {
 			const calc = ((index + 1) / ($slider2.slick('getSlick').slideCount)) * 100;
@@ -76,6 +98,17 @@
 			centerMode: false,
 			variableWidth: true,
 			infinite: false,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						variableWidth: true,
+						swipe: true,
+						arrows: false, // включение стрелок
+					}
+				}]
 		});
 		function setProgressR(index) {
 			const calc = ((index + 1) / ($sliderR.slick('getSlick').slideCount)) * 100;

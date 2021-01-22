@@ -3,12 +3,18 @@
     background-color: $dblue;
     padding: 80px 0 30px;
     flex-shrink: 0;
+    overflow: hidden;
 
     &__wrap {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        margin-bottom: 90px;
+    text-align: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 90px;
+            text-align: left;
+        }
 
         &::before {
             @include size(100%, 2px);
@@ -20,12 +26,17 @@
     }
 
     &__box {
-        display: flex;
-        width: 55.5%;
-        justify-content: space-between;
-        transform: translateX(80%);
+        text-align: center;
 
-        align-items: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            width: 55.5%;
+            justify-content: space-between;
+            transform: translateX(80%);
+    
+            align-items: center;
+        }
 
         .footer__text > .footer__link {
             font-size: 12px;
@@ -40,15 +51,24 @@
 
     &__item {
         font-size: 18px;
-        line-height: 46px;
+        line-height: 30px;
+
+
+        @media (min-width: 768px) {
+            line-height: 46px;
+        }
         
         
     }
 
     &__link {
         color: $footer;
-        font-size: 18px;
-        line-height: 21px;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
 
         &:hover {
             text-decoration: none;
