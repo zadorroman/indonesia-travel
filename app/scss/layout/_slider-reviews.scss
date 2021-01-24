@@ -64,11 +64,6 @@
             width: 580px;
         }
     }
-    
-
-    &__box {
-
-    }
 
     &__title {
         font-weight: 700;
@@ -112,9 +107,6 @@
         margin-left: 30px;
     }
 
-    &__img {
-    }
-
     &__footer {
         @extend .slider__footer;
     }
@@ -125,9 +117,5 @@
 
     &__line {
         @extend .slider__line;
-    }
-
-    &__pic {
-
     }
 }

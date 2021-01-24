@@ -6,7 +6,7 @@
     <meta name="description" content="Indonesia">
     <meta name="author" content="Vova & Roma">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Plan</title>
+    <title>Plan - Indonesia </title>
 
     <link rel="icon" href="images/favicon.png">
 
@@ -28,20 +28,26 @@
                     <a href="index.html" class="logo">
                         <i class="icon-Ind"></i><i class="icon-globe-1"></i>
                     </a>
-                    <ul class="header__menu menu">
-                        <li class="menu__item">
-                            <a href="index.html" class="menu__link">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="index.html#popular" class="menu__link">Tours</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="gallery.html" class="menu__link">Gallery</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="faq.html#contacts" class="menu__link">Contacts</a>
-                        </li>
-                    </ul>
+                    <div class="header__menu menu">
+                        <input type="checkbox" class="menu__toggle" id="menu">
+                        <label for="menu" class="menu__label">
+                            <span class="menu__line"></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#popular" class="menu__link">Tours</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="faq.html#contacts" class="menu__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -49,7 +55,7 @@
             <h1 class="header__title header__title--plan">Selection of hotels. Reservation
                 restaurants. Tickets for events.</h1>
         </div>
-        <div class="header__block">
+        <div data-aos="fade-up" class="header__block">
             <div class="container container--wrap">
                 <ul class="header__select select">
                     <li class="select__item">
@@ -200,7 +206,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
         <div class="container container--wrap">
             <div class="footer__wrap">
                 <ul class="footer__list">

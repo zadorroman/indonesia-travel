@@ -1,10 +1,79 @@
 .menu {
 
+    &__toggle {
+        display: none;
 
-    display: flex;
+        &:checked {
+            + .menu__label {
+
+                .menu__line {
+                    display: none;
+                }
+
+                &::before {
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 4px;
+                }
+            }
+
+            ~ .menu__list {
+                right: 0;
+            }
+        }
+    }
+
+    &__label {
+        @include size(20px, 15px);
+        z-index: 99;
+        display: block;
+        position: relative;
+
+        &::before,
+        &::after {
+            @include size(100%, 3px);
+            @include pos($r: 0);
+            content: '';
+            background: $back;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -1px;
+        }
+
+        &::after {
+            bottom: 1px;
+        }
+    }
+
+    &__line {
+        @include size(100%, 3px);
+        @include pos(absolute, $l: 0, $t: 35%);
+        background: $back;
+    }
+
+
+    &__list {
+        display: flex;
+
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: unset;
+        }
+
+    }
 
     &__item {
-        margin-left: 55px;
+        
+        @media (min-width: 768px) {
+            margin-left: 55px;
+        }
     }
 
     &__link {
@@ -20,10 +89,14 @@
 
             &::before {
                 @include size(100%, 2px);
-                @include pos($b:-3px, $l:0);
+                @include pos($b:-20px, $l:0);
                 background-color: #fff;
                 content: '';
                 transition: all .3s;
+
+                @media (min-width: 768px) {
+                    bottom: -3px;
+                }
             }
         }
 
@@ -48,6 +121,43 @@
         }
         
 
+
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        &__list {
+            @include size(100%,100vh);
+            @include pos($r: 200vh, $t: 0);
+            background: rgba(0,0,0, .5);
+            transition: all .3s;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        &__link {
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .menu {
+        &__toggle {
+            display: none;
+        }
+    
+        &__label {
+            display: none;
+        }
+    
+        &__line {
+            display: none;
+        }
 
     }
 }
