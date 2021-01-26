@@ -58,20 +58,45 @@
         <div data-aos="fade-up" class="header__block">
             <div class="container container--wrap">
                 <ul class="header__select select">
+
+
                     <li class="select__item">
-                        <i class="icon-map select__icon"></i>
-                        <span class="select__text">Tour</span>
-                        <i class="icon-arrow"></i>
+                        <form class="tour">
+                            <div class="__select">
+                                <div class="__select__title __select__title--tour" data-default="Option 0">Tour</div>
+                                <div class="__select__content selectJS">
+                                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                        checked />
+                                    <label for="singleSelect0" class="__select__label"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-time select__icon"></i>
-                        <span class="select__text">Duration</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--duration" data-state="">
+                                <div class="__select__title __select__title--duration" data-default="Option 0">Duration
+                                </div>
+                                <div class="__select__content selectDays">
+                                    <input id="none" class="__select__input" type="radio" name="Duration" />
+                                    <label for="none" class="__select__label __select__label--duration"></label>
+
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-person select__icon"></i>
-                        <span class="select__text">Number of guests</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--guests" data-state="">
+                                <div class="__select__title __select__title--guests" data-default="Option 0">Number of
+                                    guests
+                                </div>
+                                <div class="__select__content selectGuests">
+                                    <input id="guests" class="__select__input" type="radio" name="guests" />
+                                    <label for="guests" class="__select__label __select__label--guests"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
                         <a href="#" class="btn btn--header">Search Tour</a>
@@ -284,24 +309,9 @@
     </footer>
 
 
-
-
-    <!-- <i class="icon-time"></i>
-	<i class="icon-phone"></i>
-	<i class="icon-mail"></i>
-	<i class="icon-Star"></i>
-	<i class="icon-slider-arrow-r"></i>
-	<i class="icon-slider-arrow-l"></i>
-	<i class="icon-person"></i>
-	<i class="icon-calendar"></i>
-	<i class="icon-arrow"></i>
-	<i class="icon-location"></i>
-	<i class="icon-car"></i>
-	<i class="icon-home"></i> -->
-
-
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
 </body>
