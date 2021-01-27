@@ -14,20 +14,20 @@
 
 
     &--bali {
-        background-image: url('../../images/bali/header-bg.jpg');
+        background-image: url('../images/bali/header-bg.jpg');
     }
 
     &--plan {
-        background-image: url('../../images/plan/header-bg.jpg');
+        background-image: url('../images/plan/header-bg.jpg');
     }
 
     &--nusa {
-        background-image: url('../../images/nusa-da/header-bg.jpg');
+        background-image: url('../images/nusa-da/header-bg.jpg');
         min-height: 450px;
     }
 
     &--look {
-        background-image: url('../../images/look/header-bg.jpg');
+        background-image: url('../images/look/header-bg.jpg');
     }
 
     &--gallery {
@@ -36,7 +36,7 @@
     }
 
     &--faq {
-        background: url('../../images/faq/header-bg.jpg') no-repeat top center;
+        background: url('../images/faq/header-bg.jpg') no-repeat top center;
         background-size: cover;
         min-height: 230px;
     }
