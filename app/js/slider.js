@@ -50,11 +50,7 @@ const LIST = [
 
 
         //чтобы не ругался на других страницах и не останавливал код
-        if (document.querySelector('.tourList')) {
-            drawList();
-        } else {
-            return;
-        }
+        drawList();
 
         function drawList() {
             let container = document.querySelector('.tourList'),
@@ -63,7 +59,7 @@ const LIST = [
                 selectGuests = document.querySelector('.selectGuests'),
                 PARSED_LIST = JSON.parse(localStorage.getItem('tourList'));
 
-            container.innerHTML = '';
+            // container.innerHTML = '';
 
             if (PARSED_LIST === null || !PARSED_LIST.length) {
                 LIST.forEach((item, i) => {
@@ -75,7 +71,9 @@ const LIST = [
             }
 
             PARSED_LIST.forEach((item) => {
-                container.append(renderItem(item.name, item.duration, item.guests, item.price, item.text, item.rating, item.url, item.img, item.id));
+                if (container) {
+                    container.append(renderItem(item.name, item.duration, item.guests, item.price, item.text, item.rating, item.url, item.img, item.id));
+                }
                 selected.append(renderSelect(item.name, item.id), renderLabel(item.name, item.id));
                 selectDays.append(renderInpDays(item.name, item.id), renderLabelDays(item.duration, item.id));
                 selectGuests.append(renderInpGuest(item.guests), renderLabelGuests(item.guests, item.id));
