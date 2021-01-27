@@ -12,32 +12,27 @@
         margin: 0 auto;
 
 
-        &--feedback {
-            border: 1px solid rgba(4, 60, 161, 1);
-            padding: 26px 27px;
-            font-size: 16px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: rgba(2, 37, 99, 1);
-        }
+    }
+
+    &--feedback {
+        border: 1px solid rgba(4, 60, 161, 1);
+        padding: 26px 27px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: rgba(2, 37, 99, 1);
+        white-space: nowrap;
+    }
 
 
+    @media (min-width: 768px) {
         &:hover {
-            border: transparent;
+            border-radius: 0;
+            border: 1px solid transparent;
             text-decoration: none;
             box-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
             background-color: $white;
-        }
 
-        @media (min-width: 768px) {
-            &:hover {
-                border-radius: 0;
-                border: 1px solid transparent;
-                text-decoration: none;
-                box-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
-                background-color: $white;
-
-            }
         }
     }
 }

@@ -86,7 +86,7 @@ const LIST = [
 
             input.innerText = '';
             input.id = id;
-            input.className = '__select__input';
+            input.className = '_select__input';
             input.type = 'radio';
             input.name = 'tourlist';
 
@@ -98,7 +98,7 @@ const LIST = [
 
             input.innerText = '';
             input.id = duration + 'd';
-            input.className = '__select__input';
+            input.className = '_select__input';
             input.type = 'radio';
             input.name = 'Duration';
 
@@ -110,7 +110,7 @@ const LIST = [
 
             input.innerText = '';
             input.id = `${guests}g`;
-            input.className = '__select__input';
+            input.className = '_select__input';
             input.type = 'radio';
             input.name = 'guests';
 
@@ -123,7 +123,7 @@ const LIST = [
             let label = document.createElement('label');
 
             label.for = id;
-            label.className = '__select__label';
+            label.className = '_select__label';
             label.innerText = name;
 
             return label;
@@ -133,7 +133,7 @@ const LIST = [
             let label = document.createElement('label');
 
             label.for = id;
-            label.className = '__select__label __select__label--duration';
+            label.className = '_select__label _select__label--duration';
             label.innerText = duration;
 
             return label;
@@ -143,7 +143,7 @@ const LIST = [
             let label = document.createElement('label');
 
             label.for = id;
-            label.className = '__select__label __select__label--guests';
+            label.className = '_select__label _select__label--guests';
             label.innerText = `${guests} guest`;
 
             return label;
@@ -218,9 +218,9 @@ const LIST = [
 
 
         //tour выпадашка туров ----------------------------
-        const selectSingle = document.querySelector('.__select');
-        const selectSingle_title = selectSingle.querySelector('.__select__title');
-        const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+        const selectSingle = document.querySelector('._select');
+        const selectSingle_title = selectSingle.querySelector('._select__title');
+        const selectSingle_labels = selectSingle.querySelectorAll('._select__label');
 
         // Toggle menu
         selectSingle_title.addEventListener('click', () => {
@@ -240,9 +240,9 @@ const LIST = [
         }
 
         //duration выпадашка дней -------------------
-        const selectDay = document.querySelector('.__select--duration');
-        const selectDay_title = selectDay.querySelector('.__select__title--duration');
-        const selectDay_labels = selectDay.querySelectorAll('.__select__label--duration');
+        const selectDay = document.querySelector('._select--duration');
+        const selectDay_title = selectDay.querySelector('._select__title--duration');
+        const selectDay_labels = selectDay.querySelectorAll('._select__label--duration');
 
         // Toggle menu
         selectDay_title.addEventListener('click', () => {
@@ -263,9 +263,9 @@ const LIST = [
 
 
         //guests выпадашка людей -------------------
-        const selectGuest = document.querySelector('.__select--guests');
-        const selectGuest_title = selectGuest.querySelector('.__select__title--guests');
-        const selectGuest_labels = selectGuest.querySelectorAll('.__select__label--guests');
+        const selectGuest = document.querySelector('._select--guests');
+        const selectGuest_title = selectGuest.querySelector('._select__title--guests');
+        const selectGuest_labels = selectGuest.querySelectorAll('._select__label--guests');
 
         // Toggle menu
         selectGuest_title.addEventListener('click', () => {
