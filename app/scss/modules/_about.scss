@@ -663,8 +663,6 @@
 
     }
 
-
-
     &--individual {
 
         .block {
@@ -688,7 +686,6 @@
                 margin-bottom: 60px;
                 padding-right: 50px;
 
-
                 // padding-right: 9%;
             }
 
@@ -701,16 +698,17 @@
 
                 // padding-right: 38%;
 
-                .disc{
+                .disc {
 
-                    .icon{
+                    .icon {
                         margin-right: 35px;
                     }
-                    
+
                     display: flex;
-                        align-items: center;
-                        margin-bottom: 50px;
-                    &--last{   
+                    align-items: center;
+                    margin-bottom: 50px;
+
+                    &--last {
                         margin-bottom: 160px;
                     }
 
@@ -733,6 +731,151 @@
             margin-bottom: 150px;
         }
 
+
+    }
+
+}
+
+
+@media(min-width:500px) {
+
+    .img--help {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:500px) {
+
+    .img {
+
+        &--1,
+        &--10,
+        &--11,
+        &--4,
+        &--6,
+        &--8,
+        &--16,
+        &--14 {
+            width: 320px;
+            margin: 0px;
+        }
+
+        &--2,
+        &--9,
+        &--12,
+        &--3,
+        &--5,
+        &--7,
+        &--15,
+        &--13 {
+            display: none;
+        }
+    }
+
+    .about {
+
+        min-height: 100vh;
+
+        &--bali {
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .btn {
+                &--about {
+                    padding: 25px 20px !important;
+                }
+            }
+
+            .img {
+                display: none;
+            }
+
+            .img--help {
+                width: 100%;
+                height: 50%;
+                margin-bottom: 50px;
+            }
+        }
+
+        &--individual {
+            
+            .disc {
+                &--last {
+                    margin-bottom: 50px !important;
+                }
+            }
+        }
+
+        &--plan{
+            .wrapper{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img{
+                width: 100%;
+                height: 50%;
+                margin: 0px;
+            }
+        }
+
+        &--insurance{
+
+        }
+
+        .img {
+            margin: 0;
+            margin-bottom: 50px;
+
+            &--11 {
+                margin-bottom: 100px;
+            }
+        }
+
+
+
+        padding-top: 50px;
+
+        .block {
+            margin: 0px;
+            padding: 0px;
+
+            .uptitle {
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-size: 25px;
+
+            }
+
+            .title {
+                margin: 0px;
+                padding: 0px;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+
+            .subtitle {
+                margin: 0px;
+                padding: 0px;
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+
+            .btn--about {
+                margin: 0;
+                margin-bottom: 50px;
+            }
+
+        }
 
     }
 
