@@ -6,7 +6,7 @@
 	<meta name="description" content="Indonesia">
 	<meta name="author" content="Vova & Roma">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>Indonesia</title>
+	<title>Home - Indonesia</title>
 
 	<link rel="icon" href="images/favicon.png">
 
@@ -20,25 +20,31 @@
 <body>
 	<header class="header">
 		<div class="header__wrap">
-			<div class="container">
+			<div class="container container--wrap">
 				<nav class="header__nav">
 					<a href="index.html" class="logo">
 						<i class="icon-Ind"></i><i class="icon-globe-1 icon-globe-1--header"></i>
 					</a>
-					<ul class="header__menu menu">
-						<li class="menu__item">
-							<a href="index.html" class="menu__link">Home</a>
-						</li>
-						<li class="menu__item">
-							<a href="index.html#popular" class="menu__link">Tours</a>
-						</li>
-						<li class="menu__item">
-							<a href="gallery.html" class="menu__link">Gallery</a>
-						</li>
-						<li class="menu__item">
-							<a href="faq.html#contacts" class="menu__link">Contacts</a>
-						</li>
-					</ul>
+					<div class="header__menu menu">
+						<input type="checkbox" class="menu__toggle" id="menu">
+						<label for="menu" class="menu__label">
+							<span class="menu__line"></span>
+						</label>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__link active">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="index.html#popular" class="menu__link">Tours</a>
+							</li>
+							<li class="menu__item">
+								<a href="gallery.html" class="menu__link">Gallery</a>
+							</li>
+							<li class="menu__item">
+								<a href="faq.html#contacts" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</div>
 		</div>
@@ -46,7 +52,7 @@
 			<h1 class="header__title">INDONESIA</h1>
 			<h2 class="header__subtitle">From top to top</h2>
 		</div>
-		<div class="header__block">
+		<div data-aos="fade-up" class="header__block">
 			<div class="container container--wrap">
 				<ul class="header__select select">
 					<li class="select__item">
@@ -74,7 +80,248 @@
 
 	</header>
 
-	<footer class="footer">
+	<section data-aos="fade-up" class="tours" id="popular">
+		<div class="container container--wrap">
+			<div class="tours__wrap">
+				<div class="tours__header">
+					<h1 class="tours__title">Tours</h1>
+					<a href="bali.html" class="tours__link">See all tours</a>
+				</div>
+				<div class="tours__slider slider slider--indo">
+
+					<div class="slider__wrap slider__wrap--tour tourList">
+
+					</div>
+
+					<div class="slider__footer d-none d-md-flex">
+						<div class="slider__arrows slider__arrows--tour">
+
+						</div>
+
+						<div class="slider__line slider__line--tour" role="progressbar" aria-valuemin="0"
+							aria-valuemax="100"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tours">
+		<div class="container container--wrap">
+			<div class="tours__wrap">
+				<div class="tours__header">
+					<h1 class="tours__title">Popular places</h1>
+					<a href="bali.html" class="tours__link">Komodo island</a>
+					<a href="bali.html" class="tours__link">Bali island</a>
+					<a href="bali.html" class="tours__link">See all</a>
+				</div>
+				<div class="tours__slider slider slider--indo">
+
+					<div class="slider__wrap slider__wrap--places">
+
+						<div data-aos="fade-right" class="slider__item slider__item--places">
+							<div class="slider__pic">
+								<img src="images/indonesia/pop1.jpg" alt="images/indonesia/t-1.jpg" class="slider__img">
+							</div>
+							<div class="slider__body slider__body--places">
+								<h2 class="slider__title slider__title--places">Komodo island</h2>
+								<p class="slider__text slider__text--places">The underwater life around Komodo Island is
+									known as one of the most interesting divers in the world!</p>
+								<a href="bali.html" class="slider__btn slider__btn--places btn">Read more</a>
+
+							</div>
+						</div>
+						<div data-aos="fade-left" class="slider__item slider__item--places">
+							<div class="slider__pic">
+								<img src="images/indonesia/pop2.jpg" alt="images/indonesia/pop2.jpg"
+									class="slider__img">
+							</div>
+							<div class="slider__body slider__body--places">
+								<h2 class="slider__title slider__title--places">Bunaken Park</h2>
+								<p class="slider__text slider__text--places">Bunaken Marine Park is an impressive diving
+									site that will help you get to know the rich underwater part of the country.</p>
+								<a href="bali.html" class="slider__btn slider__btn--places btn">Read more</a>
+
+							</div>
+						</div>
+						<div class="slider__item slider__item--places">
+							<div class="slider__pic">
+								<img src="images/indonesia/pop3.jpg" alt="images/indonesia/pop3.jpg"
+									class="slider__img">
+							</div>
+							<div class="slider__body slider__body--places">
+								<h2 class="slider__title slider__title--places">Lorem Park</h2>
+								<p class="slider__text slider__text--places">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Eos odit dolore voluptatem voluptatum, ad temporibus.</p>
+								<a href="bali.html" class="slider__btn slider__btn--places btn">Read more</a>
+
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="slider__footer d-none d-md-flex">
+						<div class="slider__arrows slider__arrows--places">
+
+						</div>
+
+						<div class="slider__line slider__line--places" role="progressbar" aria-valuemin="0"
+							aria-valuemax="100"></div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container container--wrap">
+			<div class="reviews__subtitle">
+				Impressions
+			</div>
+			<div class="reviews__header">
+				<h1 class="reviews__title">Customer Reviews</h1>
+				<a href="javascript:;" class="reviews__link">See all reviews</a>
+			</div>
+			<div class="reviews__slider slider-r">
+				<div class="slider-r__wrap">
+					<div data-aos="fade-right" class="slider-r__item">
+						<div class="slider-r__row">
+							<div class="slider-r__aside">
+								<div class="slider-r__avatar">
+									<img src="images/indonesia/avat1.jpg" alt="images/indonesia/avat1.jpg"
+										class="slider-r__ava">
+								</div>
+								<div class="slider-r__name">
+									Sam
+								</div>
+								<div class="slider-r__from">
+									Moscow. Russia
+								</div>
+								<div class="slider-r__date">
+									Tour date:<br> July 2020
+								</div>
+							</div>
+							<div class="slider-r__info">
+								<div class="slider-r__box">
+									<h2 class="slider-r__title">
+										Tour: Bali Island
+									</h2>
+									<div class="slider-r__stars"><i class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><span class="slider-r__rating">5,0</span></div>
+									<p class="slider-r__text">
+										We can endlessly talk about the uniqueness of Bali, its energy, the bewitching
+										other
+										world - Indonesia. In general, I liked the trip.
+									</p>
+									<a href="javascript:;" class="slider-r__link">read more</a>
+								</div>
+								<div class="slider-r__pic d-none d-md-block">
+									<img src="images/indonesia/rew1.jpg" alt="images/indonesia/rew1.jpg"
+										class="slider-r__img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-aos="fade-left" class="slider-r__item">
+						<div class="slider-r__row">
+							<div class="slider-r__aside">
+								<div class="slider-r__avatar">
+									<img src="images/indonesia/avat2.jpg" alt="images/indonesia/avat2.jpg"
+										class="slider-r__ava">
+								</div>
+								<div class="slider-r__name">
+									Roma
+								</div>
+								<div class="slider-r__from">
+									Poltava. Ukraine
+								</div>
+								<div class="slider-r__date">
+									Tour date:<br> April 2020
+								</div>
+							</div>
+							<div class="slider-r__info">
+								<div class="slider-r__box">
+									<h2 class="slider-r__title">
+										Tour: Komodo Island
+									</h2>
+									<div class="slider-r__stars"><i class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><span class="slider-r__rating">5,0</span></div>
+									<p class="slider-r__text">
+										I really wanted something new, and more exotic than flying over the equator and
+										learning how to slide on a board along the waves</p>
+									<a href="javascript:;" class="slider-r__link">read more</a>
+								</div>
+								<div class="slider-r__pic d-none d-md-block">
+									<img src="images/indonesia/rew2.jpg" alt="images/indonesia/rew2.jpg"
+										class="slider-r__img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-r__item">
+						<div class="slider-r__row">
+							<div class="slider-r__aside">
+								<div class="slider-r__avatar ">
+									<img src="images/indonesia/avat3.jpg" alt="images/indonesia/avat3.jpg"
+										class="slider-r__ava">
+								</div>
+								<div class="slider-r__name">
+									Mari
+								</div>
+								<div class="slider-r__from">
+									Los Angeles. USA
+								</div>
+								<div class="slider-r__date">
+									Tour date:<br> July 2020
+								</div>
+							</div>
+							<div class="slider-r__info">
+								<div class="slider-r__box">
+									<h2 class="slider-r__title">
+										Tour: Bali Island
+									</h2>
+									<div class="slider-r__stars"><i class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><i class="icon-Star"></i><i
+											class="icon-Star"></i><span class="slider-r__rating">5,0</span></div>
+									<p class="slider-r__text">
+										We can endlessly talk about the uniqueness of Bali, its energy, the bewitching
+										other world - Indonesia. In general, I liked the trip.
+									</p>
+									<a href="javascript:;" class="slider-r__link">read more</a>
+								</div>
+								<div class="slider-r__pic d-none d-md-block">
+									<img src="images/indonesia/rew3.jpg" alt="images/indonesia/rew3.jpg"
+										class="slider-r__img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slider-r__footer d-none d-md-flex">
+					<div class="slider-r__arrows">
+
+					</div>
+
+					<div class="slider-r__line" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<footer data-aos="fade-up" class="footer">
 		<div class="container container--wrap">
 			<div class="footer__wrap">
 				<ul class="footer__list">
@@ -169,22 +416,6 @@
 			</div>
 		</div>
 	</footer>
-
-
-
-
-	<!-- <i class="icon-time"></i>
-	<i class="icon-phone"></i>
-	<i class="icon-mail"></i>
-	<i class="icon-Star"></i>
-	<i class="icon-slider-arrow-r"></i>
-	<i class="icon-slider-arrow-l"></i>
-	<i class="icon-person"></i>
-	<i class="icon-calendar"></i>
-	<i class="icon-arrow"></i>
-	<i class="icon-location"></i>
-	<i class="icon-car"></i>
-	<i class="icon-home"></i> -->
 
 
 	<script src="js/main.min.js"></script>

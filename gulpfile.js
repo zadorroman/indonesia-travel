@@ -3,6 +3,7 @@ const SOURCES = {
 		'./node_modules/bootstrap/dist/css/bootstrap.min.css',
 		'./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css', //fancybox css
 		'./node_modules/aos/dist/aos.css', //aos css
+		'./node_modules/slick-carousel/slick/slick.css',
 	],
 	js: [
 		'./node_modules/jquery/dist/jquery.min.js',
