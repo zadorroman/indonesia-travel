@@ -1,10 +1,12 @@
 .book {
 
-    margin: 0 80px;
+    margin: 0 auto;
     margin-bottom: 140px;
     background-color: #fff;
-    padding: 70px 110px 75px 110px;
+    padding: 70px 0 75px;
     color: rgba(2, 37, 99, 1);
+    max-width: 1310px;
+    width: 100%;
 
     .title {
         font-size: 24px;
