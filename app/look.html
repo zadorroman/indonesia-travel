@@ -6,7 +6,7 @@
     <meta name="description" content="Indonesia">
     <meta name="author" content="Vova & Roma">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Look and do!</title>
+    <title>Look and do! - Indonesia </title>
 
     <link rel="icon" href="images/favicon.png">
 
@@ -23,48 +23,79 @@
 <body>
     <header class="header header--look">
         <div class="header__wrap">
-            <div class="container">
+            <div class="container container--wrap">
                 <nav class="header__nav">
                     <a href="index.html" class="logo">
                         <i class="icon-Ind"></i><i class="icon-globe-1"></i>
                     </a>
-                    <ul class="header__menu menu">
-                        <li class="menu__item">
-                            <a href="index.html" class="menu__link">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="index.html#popular" class="menu__link">Tours</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="gallery.html" class="menu__link">Gallery</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="faq.html#contacts" class="menu__link">Contacts</a>
-                        </li>
-                    </ul>
+                    <div class="header__menu menu">
+                        <input type="checkbox" class="menu__toggle" id="menu">
+                        <label for="menu" class="menu__label">
+                            <span class="menu__line"></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#popular" class="menu__link">Tours</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="faq.html#contacts" class="menu__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
         <div class="container container--wrap">
             <h1 class="header__title header__title--look">Look and Do</h1>
         </div>
-        <div class="header__block">
+        <div data-aos="fade-up" class="header__block">
             <div class="container container--wrap">
                 <ul class="header__select select">
+
+
                     <li class="select__item">
-                        <i class="icon-map select__icon"></i>
-                        <span class="select__text">Tour</span>
-                        <i class="icon-arrow"></i>
+                        <form class="tour">
+                            <div class="__select">
+                                <div class="__select__title __select__title--tour" data-default="Option 0">Tour</div>
+                                <div class="__select__content selectJS">
+                                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                        checked />
+                                    <label for="singleSelect0" class="__select__label"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-time select__icon"></i>
-                        <span class="select__text">Duration</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--duration" data-state="">
+                                <div class="__select__title __select__title--duration" data-default="Option 0">Duration
+                                </div>
+                                <div class="__select__content selectDays">
+                                    <input id="none" class="__select__input" type="radio" name="Duration" />
+                                    <label for="none" class="__select__label __select__label--duration"></label>
+
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-person select__icon"></i>
-                        <span class="select__text">Number of guests</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--guests" data-state="">
+                                <div class="__select__title __select__title--guests" data-default="Option 0">Number of
+                                    guests
+                                </div>
+                                <div class="__select__content selectGuests">
+                                    <input id="guests" class="__select__input" type="radio" name="guests" />
+                                    <label for="guests" class="__select__label __select__label--guests"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
                         <a href="#" class="btn btn--header">Search Tour</a>
@@ -76,134 +107,7 @@
 
     </header>
 
-
-    <section class="about about--look">
-        <div class="wrapper">
-            <div class="block">
-                <div class="uptitle">
-                    Смотри и Делай
-                </div>
-                <div class="title">
-                    Дайвинг в Индонезии
-                </div>
-                <div class="subtitle">
-                    Индонезия, занимающая огромные пространства между континентальными частями Юго-Восточной Азии и
-                    Австралией, состоит из более чем 17 500 островов. Эта прекрасная страна, где обитает 25% всех видов
-                    рыб мира и находятся 15% всех коралловых рифов, является обязательным местом для посещения дла
-                    каждого страстного дайвера. <br><br>
-
-                    Выбор регионов для дайвинга в Индонезии также впечатляет – настолько, что дайверы всех уровней могут
-                    даже почувствовать себя несколько избалованными. К популярным регионам Индонезии относятся Бали,
-                    острова Гили, Ломбок, Северный Сулавеси, Комодо, Вакатоби, Лембех, Манадо, Раджа-Ампат и другие.
-                    Однако среди тысяч местных островов вас ждет множество других невероятных мест.
-                </div>
-                <a href="#" class="btn btn--about">Читать больше</a>
-
-                <img src="images/look/look2.jpg" class="img img--1" alt="photo">
-            </div>
-
-            <img src="images/look/look1.jpg" class="img img--2" alt="photo">
-        </div>
-
-    </section>
-
-
-    <section class="about about--vulcano">
-        <div class="wrapper">
-            <img src="images/look/look3.jpg" class="img img--3" alt="photo">
-            <div class="block">
-                <div class="uptitle">
-                    Смотри и Делай
-                </div>
-                <div class="title">
-                    Туры На Вулканы Индонезии
-                </div>
-                <div class="subtitle">
-                    Индонезия расположена в самой сейсмически активной зоне Земли, – на ее территории находятся 400
-                    вулканов, 80 из которых – действующие. Попутешествовать по вулканам Индонезии – это мечта!
-                    Присоединяйтесь к нашему туру, и вы взойдете на вулкан Иджен с бирюзовым кратерным озером, встретите
-                    рассвет на Бромо, понаблюдаете за извержением вулкана Мерапи и искупаетесь в горячих источниках у
-                    подножья Батур. Все эти сокровища расположены на 2-х удивительных островах страны: Бали и Ява.
-                    <br><br>
-
-                    Наш захватывающий тур начнется в городе Джокьякарта и завершится на побережье острова Бали, - мы
-                    охватим как культурное, так и природное разнообразие Индонезии. Вы увидите культурные памятники
-                    индуизма и буддизма, побываете в джунглях и вулканических долинах.
-                </div>
-                <a href="#" class="btn btn--about">Читать больше</a>
-
-                <img src="images/look/look4.jpg" class="img img--4" alt="photo">
-            </div>
-        </div>
-    </section>
-
-    <section class="about about--fauna">
-        <div class="wrapper">
-            <div class="block">
-                <div class="uptitle">
-                    Смотри и Делай
-                </div>
-                <div class="title">
-                    Наблюдение за Фауной
-                </div>
-                <div class="subtitle">
-                    Индонезия имеет самую богатую фауну среди всех стран мира. Многообразием отличаются практически все
-                    основные классы животных, обитающих в Индонезии. На начало XXI века здесь было зарегистрировано 515
-                    видов млекопитающих, 1531 вид птиц, 122 вида бабочек, более 600 видов пресмыкающихся и более 270
-                    видов земноводных. При этом эндемиками являются, в частности, 39 % млекопитающих и 36 % птиц. В
-                    числе наиболее известных эндемиков — комодский варан, олень Куля, бабирусса, тонкский макак.
-                    <br><br>
-                    Многие животные находятся под угрозой, популяции некоторых видов сокращаются весьма быстрыми
-                    темпами. Так, только из млекопитающих 140 видов отнесены Международным союзом охраны природы (МСОП)
-                    к категории угрожаемых, 15 из них считаются находящимися на грани исчезновения. В числе последних
-                    такие животные, как орангутан, яванский носорог, суматранский тигр.
-                </div>
-                <a href="#" class="btn btn--about">Читать больше</a>
-
-                <img src="images/look/look6.jpg" class="img img--6" alt="photo">
-            </div>
-
-            <img src="images/look/look5.jpg" class="img img--5" alt="photo">
-        </div>
-
-    </section>
-
-
-
-    <section class="about about--active">
-        <div class="wrapper">
-            <img src="images/look/look7.jpg" class="img img--7" alt="photo">
-            <div class="block">
-                <div class="uptitle">
-                    Смотри и Делай
-                </div>
-                <div class="title">
-                    Активный и Здоровый отдых
-                </div>
-                <div class="subtitle">
-                    В наших спортивных путешествиях, каждый сможет открыться новым ощущениям и запомнить это время на
-                    всю жизнь. Это уникальное предложение для многих любителей путешествий и приключений, где в отличии
-                    от обычной поездки человек сможет получить идеальный симбиоз душевного и физического отдыха. Туры
-                    заряжают необходимой энергией, которой хватает надолго.
-                    <br><br>
-                    Все спортивные туры ориентированы на тех, кто заранее планирует свой отдых, не по стандартному
-                    шаблону. Окунись в атмосферу здоровья в отличной компании!Как направление, спортивные туры имеют
-                    огромную популярность среди людей, любящих активный отдых. Суть подобных поездок в резкой смене
-                    обстановки — мощный заряд энергии и восстановление жизненных сил. В таких турах спортивным занятиям
-                    отдаётся большее количество времени, это могут быть: пробежки с утра по берегу моря или океана,
-                    упражнения на растяжку и физическую сил
-                </div>
-                <a href="#" class="btn btn--about">Читать больше</a>
-
-                <img src="images/look/look8.jpg" class="img img--8" alt="photo">
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
         <div class="container container--wrap">
             <div class="footer__wrap">
                 <ul class="footer__list">
@@ -318,6 +222,7 @@
 
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
 </body>

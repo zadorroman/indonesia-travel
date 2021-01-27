@@ -6,7 +6,7 @@
     <meta name="description" content="Indonesia">
     <meta name="author" content="Vova & Roma">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Plan</title>
+    <title>Plan - Indonesia </title>
 
     <link rel="icon" href="images/favicon.png">
 
@@ -23,25 +23,31 @@
 <body>
     <header class="header header--plan">
         <div class="header__wrap header__wrap--plan">
-            <div class="container">
+            <div class="container container--wrap">
                 <nav class="header__nav">
                     <a href="index.html" class="logo">
                         <i class="icon-Ind"></i><i class="icon-globe-1"></i>
                     </a>
-                    <ul class="header__menu menu">
-                        <li class="menu__item">
-                            <a href="index.html" class="menu__link">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="index.html#popular" class="menu__link">Tours</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="gallery.html" class="menu__link">Gallery</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="faq.html#contacts" class="menu__link">Contacts</a>
-                        </li>
-                    </ul>
+                    <div class="header__menu menu">
+                        <input type="checkbox" class="menu__toggle" id="menu">
+                        <label for="menu" class="menu__label">
+                            <span class="menu__line"></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#popular" class="menu__link">Tours</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="gallery.html" class="menu__link">Gallery</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="faq.html#contacts" class="menu__link">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -49,23 +55,48 @@
             <h1 class="header__title header__title--plan">Selection of hotels. Reservation
                 restaurants. Tickets for events.</h1>
         </div>
-        <div class="header__block">
+        <div data-aos="fade-up" class="header__block">
             <div class="container container--wrap">
                 <ul class="header__select select">
+
+
                     <li class="select__item">
-                        <i class="icon-map select__icon"></i>
-                        <span class="select__text">Tour</span>
-                        <i class="icon-arrow"></i>
+                        <form class="tour">
+                            <div class="__select">
+                                <div class="__select__title __select__title--tour" data-default="Option 0">Tour</div>
+                                <div class="__select__content selectJS">
+                                    <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect"
+                                        checked />
+                                    <label for="singleSelect0" class="__select__label"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-time select__icon"></i>
-                        <span class="select__text">Duration</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--duration" data-state="">
+                                <div class="__select__title __select__title--duration" data-default="Option 0">Duration
+                                </div>
+                                <div class="__select__content selectDays">
+                                    <input id="none" class="__select__input" type="radio" name="Duration" />
+                                    <label for="none" class="__select__label __select__label--duration"></label>
+
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
-                        <i class="icon-person select__icon"></i>
-                        <span class="select__text">Number of guests</span>
-                        <i class="icon-arrow"></i>
+                        <form>
+                            <div class="__select __select--guests" data-state="">
+                                <div class="__select__title __select__title--guests" data-default="Option 0">Number of
+                                    guests
+                                </div>
+                                <div class="__select__content selectGuests">
+                                    <input id="guests" class="__select__input" type="radio" name="guests" />
+                                    <label for="guests" class="__select__label __select__label--guests"></label>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                     <li class="select__item">
                         <a href="#" class="btn btn--header">Search Tour</a>
@@ -77,34 +108,130 @@
 
     </header>
 
-    <section class="about about--plan">
-        <div class="wrapper">
-            <div class="block">
-                <div class="uptitle">
-                    Спланируй
-                </div>
-                <div class="title">
-                    Мы поможем Вам найти нужный вариант проживания на основании вашего бюджета и предпочтений. А также
-                    найти ресторан, бар, площадку для мероприятия, найти и забронировать билеты на события и
-                    развлечения.
-                </div>
-                <div class="subtitle">
-                    Мы поможем Вам найти нужный вариант проживания на основании вашего бюджета и предпочтений. А также
-                    найти ресторан, бар, площадку для мероприятия, найти и забронировать билеты на события и
-                    развлечения. Подобрать место с уникальным концептом или интерьером.
-                </div>
+    <section class="tours">
+        <div class="container container--wrap">
+            <div class="tours__wrap">
+                <div class="tours__header">
+                    <h1 class="tours__title">Selection services</h1>
 
+                </div>
+                <div class="tours__slider slider slider--indo">
+
+                    <div class="slider__wrap slider__wrap--tour">
+
+                        <div class="slider__item slider__item--look">
+                            <div class="slider__pic">
+                                <img src="images/plan/s1.jpg" alt="images/plan/s1.jpg" class="slider__img">
+                            </div>
+                            <div class="slider__body slider__body--look">
+                                <div class="slider__space">
+                                    <h2 class="slider__title slider__title--look">Hotels and accommodation</h2>
+
+                                    <div class="slider__box slider__box--look">
+
+                                        <p class="slider__text slider__text--look">Selection of hotels / villas /
+                                            apartments by country (but not more than in 8 locations)</p>
+                                        <p class="slider__text slider__text--look">Selection of accommodation
+                                            options<br>
+                                            Maximum 8 locations / cities<br>
+                                            Mandatory budget per day<br>
+                                            Location options<br>
+                                            Service level / service availability preferences<br>
+                                            Country Reservation Assistance
+                                        </p>
+                                        <p class="slider__text slider__text--look">
+                                            Competitive cost request
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="nusa.html" class="slider__btn btn">Order</a>
+
+                            </div>
+                            <span class="slider__price slider__price--look">500 $</span>
+                        </div>
+                        <div class="slider__item slider__item--look">
+                            <div class="slider__pic">
+                                <img src="images/plan/s2.jpg" alt="images/plan/s2.jpg" class="slider__img">
+                            </div>
+                            <div class="slider__body slider__body--look">
+                                <div class="slider__space">
+                                    <h2 class="slider__title slider__title--look">Restaurants / bars</h2>
+
+                                    <div class="slider__box slider__box--look">
+
+                                        <p class="slider__text slider__text--look">Selection of restaurants / cafes /
+                                            bars in the country (but not more than in 8 places)</p>
+                                        <p class="slider__text slider__text--look">Selection of restaurants / cafes /
+                                            bars / food establishments <br>
+                                            Maximum 8 locations / cities<br>
+                                            Obligatory dinner budget / menu negotiation <br>
+                                            Location options <br>
+                                        </p>
+                                        <p class="slider__text slider__text--look">
+                                            Service level preferences
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="nusa.html" class="slider__btn btn">Order</a>
+
+                            </div>
+                            <span class="slider__price slider__price--look">500 $</span>
+                        </div>
+                        <div class="slider__item slider__item--look">
+                            <div class="slider__pic">
+                                <img src="images/plan/s3.jpg" alt="images/plan/s3.jpg" class="slider__img">
+                            </div>
+                            <div class="slider__body slider__body--look">
+                                <div class="slider__space">
+                                    <h2 class="slider__title slider__title--look">Events / tickets</h2>
+
+                                    <div class="slider__box slider__box--look">
+
+                                        <p class="slider__text slider__text--look">Selection
+                                            entertainment / activities /
+                                            recreation / event areas</p>
+                                        <p class="slider__text slider__text--look">Selection of venues / events /
+                                            entertainment <br>
+                                            Maximum 8 locations / cities <br>
+                                            Mandatory budget <br>
+                                            Location options <br>
+                                            Assistance in booking services and services
+                                        </p>
+                                        <p class="slider__text slider__text--look">
+                                            Service level preferences
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="nusa.html" class="slider__btn btn">Order</a>
+
+                            </div>
+                            <span class="slider__price slider__price--look">500 $</span>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <div class="slider__footer">
+                        <div class="slider__arrows slider__arrows--tour">
+
+                        </div>
+
+                        <div class="slider__line slider__line--tour" role="progressbar" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+
+                    </div>
+
+                </div>
             </div>
-            <img src="images/plan/plan-1.jpg" class="img" alt="photo">
         </div>
-
-
     </section>
 
-
-
-
-    <footer class="footer">
+    <footer data-aos="fade-up" class="footer">
         <div class="container container--wrap">
             <div class="footer__wrap">
                 <ul class="footer__list">
@@ -219,6 +346,7 @@
 
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
 </body>

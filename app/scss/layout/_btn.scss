@@ -1,22 +1,31 @@
 .btn {
     transition: all .5s;
     font: 700 16px/19px $font;
+    border-radius: 0;
 
     &--header {
         padding: 25px 38px;
         background-color: $dblue;
         color: $white;
         border-radius: 0;
-        border: transparent;
+        border: 1px solid transparent;
+        margin: 0 auto;
+
+
+    }
+
+    @media (min-width: 768px) {
+        &:hover {
+            border-radius: 0;
+            border: 1px solid transparent;
+            text-decoration: none;
+            box-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
+            background-color: $white;
+    
+        }
     }
 
 
-    &:hover {
-        
-        border: transparent;
-        text-decoration: none;
-        box-shadow: 8px 8px 0 #000, 0 0 0 #fff, -8px -8px 0 #eb452b;
-        background-color: $white;
 
-    }
+    
 }
