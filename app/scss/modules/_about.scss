@@ -9,6 +9,7 @@
     .wrapper {
         display: flex;
         justify-content: center;
+        margin: 0 80px;
     }
 
 
@@ -51,10 +52,6 @@
                     max-height: 70px;
                     margin-bottom: 180px;
                     text-transform: uppercase;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
         }
@@ -112,10 +109,6 @@
                     max-height: 70px;
                     margin-bottom: 95px;
                     text-transform: uppercase;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
         }
@@ -260,10 +253,6 @@
                     max-height: 70px;
                     margin-bottom: 285px;
                     text-transform: uppercase;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
         }
@@ -335,10 +324,6 @@
                     margin-bottom: 145px;
                     text-transform: uppercase;
                     margin-left: 165px;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
 
@@ -462,10 +447,6 @@
                     margin-bottom: 140px;
                     text-transform: uppercase;
                     margin-left: 165px;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
 
@@ -534,10 +515,6 @@
                     margin-bottom: 270px;
                     text-transform: uppercase;
                     margin-left: 165px;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
 
@@ -600,10 +577,6 @@
                     max-height: 70px;
                     margin-bottom: 300px;
                     text-transform: uppercase;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
         }
@@ -668,10 +641,6 @@
                     margin-bottom: 225px;
                     text-transform: uppercase;
                     margin-left: 165px;
-
-                    &:hover {
-                        border-color: transparent;
-                    }
                 }
             }
 
@@ -680,6 +649,7 @@
         .img--13 {
             max-width: 546px;
             max-height: 1137px;
+            margin-right: 110px;
 
         }
 
@@ -750,7 +720,7 @@
         .img--15 {
             max-width: 546px;
             max-height: 1137px;
-            margin-right: 25px;
+            margin-right: 110px;
 
         }
 
@@ -818,8 +788,6 @@
             .btn {
                 &--about {
                     padding: 25px 20px !important;
-
-                   
                 }
             }
 
