@@ -140,7 +140,7 @@
 
                     <img src="images/bali/bali1.jpg" class="img--help" alt="photo" data-aos="fade-up">
 
-                    <a href="#" class="btn btn--about">compose your tour</a>
+                    <a href="javascript:void(0);" class="btn btn--about">compose your tour</a>
 
 
                 </div>
@@ -267,13 +267,13 @@
                 <div class="form">
                     <div class="title">Book now</div>
                     <div class="name">Book Bali Tour</div>
-                    <input type="text" class="field" placeholder="Name">
-                    <input type="text" class="field" placeholder="Surname">
-                    <input type="email" class="field" placeholder="Email">
-                    <input type="tel" class="field" placeholder="Phone">
+                    <input type="text" class="field" placeholder="Name" id="name">
+                    <input type="text" class="field" placeholder="Surname" id="surname">
+                    <input type="email" class="field" placeholder="Email" id="email">
+                    <input type="tel" class="field" placeholder="Phone" id="phone">
 
 
-                    <div class="__select" data-state="">
+                    <div class="__select">
                         <div class="__select__title" data-default="Option 0">Select tour</div>
                         <div class="__select__content">
                             <input id="Select0" class="__select__input" type="radio" name="Select" disabled />
@@ -287,7 +287,18 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn--book">book a Tour</a>
+                    <a href="javascript:void(0);" class="btn btn--book">book a Tour</a>
+
+                    <div class="my_modal" id="my_modal">
+                        <div class="my_modal-content">
+                            <div class="my_modal-header">
+                                <h2>Thanks for booking our tour ! <span class="my_close">&times;</span> </h2>
+                            </div>
+                            <div class="my_modal-body"></div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="images">
                     <img src="images/bali/book.jpg" alt="photo" class="img">
@@ -408,6 +419,8 @@
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/my_modal.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
 </body>
