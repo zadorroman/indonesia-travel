@@ -208,6 +208,9 @@
     }
 
     &--nusa {
+        .wrapper{
+            padding: 0 80px
+        }
         .name {
             margin-bottom: 33px;
             line-height: 58px;
@@ -225,6 +228,11 @@
     section.book {
 
         &--nusa{
+
+            .wrapper{
+                padding:0;
+            }
+
             .name{
                 line-height: 30px;
                 margin-bottom: 20px !important;

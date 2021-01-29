@@ -56,6 +56,20 @@
 
     </header>
 
+
+    <section class="nusa_info">
+        <div class="container container--wrap">
+            <div class="text">Bali tour: soft ocean breeze or perfect escape from the hustle and bustle of the city
+            </div>
+            <div class="block">
+                <div class="item date"><i class="icon icon-calendar"></i> <p class="title">Every day all year</p> </div>
+                <div class="item duration"> <i class="icon icon-time"></i>  <p class="title">10 days</p> </div>
+                <div class="item location"> <i class="icon icon-location"></i> <p class="title">Individual tour</p> </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="about about--nusa">
         <div class="container container--wrap">
             <div class="wrapper">
@@ -212,10 +226,10 @@
             <div class="form">
                 <div class="title">Book now</div>
                 <div class="name">Book Tour of Nusa Da and Ubud City</div>
-                <input type="text" class="field" placeholder="Name">
-                <input type="text" class="field" placeholder="Surname">
-                <input type="email" class="field" placeholder="Email">
-                <input type="tel" class="field" placeholder="Phone">
+                <input type="text" class="field" placeholder="Name" id="name">
+                <input type="text" class="field" placeholder="Surname" id="surname">
+                <input type="email" class="field" placeholder="Email" id="email">
+                <input type="tel" class="field" placeholder="Phone" id="phone">
 
 
                 <div class="__select" data-state="">
@@ -232,7 +246,19 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn btn--book">book a Tour</a>
+                <a href="javascript:void(0);" class="btn btn--book">book a Tour</a>
+
+                <div class="my_modal" id="my_modal">
+                    <div class="my_modal-content">
+                        <div class="my_modal-header">
+                            <h2>Thanks for booking our tour ! <span class="my_close">&times;</span> </h2>
+                        </div>
+
+                        <div class="my_modal-body"></div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="images">
                 <img src="images/nusa-da/book.jpg" alt="photo" class="img">
@@ -247,7 +273,7 @@
                 <div class="text">
                     Your opinion is very important to us - it helps us to constantly improve!
                 </div>
-                <a href="#" class="btn btn--feedback">Give Feedback</a>
+                <a href="javascript:void(0);" class="btn btn--feedback">Give Feedback</a>
             </div>
         </div>
     </section>
@@ -372,6 +398,7 @@
     <!--build:js js/main.min.js -->
     <script src="js/bundle.min.js"></script>
     <script src="js/select.js"></script>
+    <script src="js/my_modal.js"></script>
     <script src="js/main.js"></script>
     <!--endbuild-->
 </body>
