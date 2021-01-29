@@ -122,7 +122,7 @@
 					<div class="subtitle">
 						Indonesia is a unique and diverse country, located on thousands of islands in the ocean.
 					</div>
-					<a href="#" class="btn btn--about">Read more</a>
+					<a href="javascript:void(0);" class="btn btn--about">Read more</a>
 
 					<img src="images/indonesia/indo-2.jpg" class="img img--1" alt="photo" data-aos="fade-right">
 
@@ -281,7 +281,7 @@
 						sugar
 						cane.
 					</div>
-					<a href="#" class="btn btn--about">Read more</a>
+					<a href="javascript:void(0);" class="btn btn--about">Read more</a>
 
 					<img src="images/indonesia/kitchen2.jpg" class="img img--11" alt="photo" data-aos="flip-right">
 				</div>
@@ -436,13 +436,15 @@
 
 		<div class="wrapper">
 
+
+
 			<div class="form">
 				<div class="title">Book now</div>
 				<div class="name">Book Indonesia Tour</div>
-				<input type="text" class="field" placeholder="Name" id="name">
+				<input type="text" class="field" placeholder="Name"    id="name"   >
 				<input type="text" class="field" placeholder="Surname" id="surname">
-				<input type="email" class="field" placeholder="Email" id="email">
-				<input type="tel" class="field" placeholder="Phone" id="phone">
+				<input type="email" class="field" placeholder="Email"  id="email"  >
+				<input type="tel" class="field" placeholder="Phone"    id="phone"  >
 
 				<div class="__select">
 					<div class="__select__title" data-default="Option 0">Select tour</div>
@@ -458,7 +460,19 @@
 					</div>
 				</div>
 
-				<a href="#" class="btn btn--book">book a Tour</a>
+				<a href="javascript:void(0);" class="btn btn--book">book a Tour</a>
+
+
+				<div class="my_modal" id="my_modal">
+					<div class="my_modal-content">
+						<div class="my_modal-header">
+							<h2>Thanks for booking our tour ! <span class="my_close">&times;</span> </h2>
+						</div>
+
+						<div class="my_modal-body"></div>
+					</div>
+				</div>
+
 			</div>
 			<div class="images">
 				<img src="images/indonesia/book.jpg" alt="photo" class="img">
@@ -472,7 +486,7 @@
 				<div class="text">
 					Your opinion is very important to us - it helps us to constantly improve!
 				</div>
-				<a href="#" class="btn btn--feedback">Give Feedback</a>
+				<a href="javascript:void(0);" class="btn btn--feedback">Give Feedback</a>
 			</div>
 		</div>
 	</section>
@@ -584,6 +598,7 @@
 	<script src="js/bundle.min.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/select.js"></script>
+	<script src="js/my_modal.js"></script>
 	<script src="js/main.js"></script>
 	<!--endbuild-->
 </body>
