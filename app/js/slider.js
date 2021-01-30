@@ -36,6 +36,39 @@ const LIST = [
         img: 't-3',
 
     },
+    {
+        name: 'Bunaken Park',
+        duration: 15,
+        guests: 3,
+        price: 5000,
+        text: 'Bunaken Marine Park is an impressive diving site that will help you get to know the rich underwater part of the country.',
+        rating: '5',
+        url: 'map',
+        img: 't-1',
+
+    },
+    {
+        name: 'Komodo island',
+        duration: 9,
+        guests: 3,
+        price: 3000,
+        text: 'The underwater life around Komodo Island is known as one of the most interesting divers in the world!',
+        rating: '4,6',
+        url: 'map2',
+        img: 't-2',
+
+    },
+    {
+        name: 'Bali island',
+        duration: 12,
+        guests: 4,
+        price: 2200,
+        text: `Most tourists start their journey in Indonesia on the country's most famous island.`,
+        rating: '5,0',
+        url: 'map3',
+        img: 't-3',
+
+    },
 
 ];
 

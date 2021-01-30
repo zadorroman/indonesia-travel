@@ -13,7 +13,7 @@
         &::before {
             content: '';
             @include size(18px);
-            @include pos($t:0, $l:-20px);
+            @include pos($t:0, $l:-40px);
             border: 1px solid $dblue;
             border-radius: 50%;
             transition: all .3s;
@@ -72,6 +72,10 @@
         border-bottom: none;
         padding: 0;
 
+        @media (max-width: 768px) {
+            padding-left: 35px;
+        }
+
     }
 
     &__card {
@@ -96,6 +100,10 @@
 
     &__body {
         padding: 0;
+
+        @media (max-width: 768px) {
+            padding: 0 5px;
+        }
     }
 }
 
