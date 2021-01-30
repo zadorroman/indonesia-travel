@@ -46,16 +46,24 @@
     }
 
     &__list {
-        margin: 0 15px;
+        margin: 0 15px 35px;
     }
 
     &__item {
         font-size: 18px;
         line-height: 30px;
 
+        &:first-child {
+            margin-bottom: 15px;
+        }
+
 
         @media (min-width: 768px) {
             line-height: 46px;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
         }
         
         

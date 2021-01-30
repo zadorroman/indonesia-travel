@@ -56,6 +56,10 @@
         height: 390px;
         width: 385px;
         background-color: #fff;
+
+        @media (max-width: 768px) {
+            height: 445px;
+        }
         
 
         &--places{
@@ -96,6 +100,11 @@
         line-height: 34px;
         font-weight: 700;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            padding-top: 20px;
+        }
+
 
         &--places {
             line-height: 28px;
@@ -213,6 +222,11 @@
         text-transform: uppercase;
         white-space: nowrap;
         display: inline-block;
+
+        @media (max-width: 768px) {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
 
         &--places {
             padding: 25px 45px;
