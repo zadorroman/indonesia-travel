@@ -30,14 +30,16 @@
         margin-right: 150px;
     }
 
-    // .icon-location {
-    //     font-weight: 700;
-    // }
+    .icon-location {
+        font-size: 36px;
+        transform: translateX(-3px);
+    }
 
     .item {
         margin-bottom: 60px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
     }
 }
@@ -70,6 +72,11 @@
 
         .item{
             margin-bottom: 30px;
+        }
+
+        .icon-location {
+            font-size: 26px;
+            transform: translateX(-3px);
         }
     }
 
