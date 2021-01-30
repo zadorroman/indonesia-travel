@@ -29,7 +29,7 @@
     }
 
     &__first {
-        max-width: 760px;
+        max-width: 763px;
         width: 100%;
     }
 
@@ -57,12 +57,138 @@
         margin-bottom: 140px;
     }
 
-    &__beaches {
-        margin-right: 20px;
+
+    &__cities {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
         @media (min-width: 768px) {
-            margin-right: 0;
+            padding: 0;
+            margin: 0 30px 0 0;
         }
     }
+
+    &__fauna {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__flora {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__volcanoes {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+            margin: 0 30px 0 0;
+        } 
+    }
+
+    &__beaches {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        } 
+    }
+
+    &__beautiful {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        } 
+    }
+
+    &__sights {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__food {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__entertainment {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__locals {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__hotels {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        
+
+        @media (min-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
 
     a > img {
             max-width: 400px;
