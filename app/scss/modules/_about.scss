@@ -50,6 +50,11 @@
                     max-height: 70px;
                     margin-bottom: 180px;
                     text-transform: uppercase;
+                    color: rgba(2, 37, 99, 1);
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
         }
@@ -68,7 +73,7 @@
         }
     }
 
-    
+
     &--bali {
 
 
@@ -105,10 +110,15 @@
                 &--about {
                     border: 1px solid rgba(4, 60, 161, 1);
                     padding: 25px 75px;
+                    color: rgba(2, 37, 99, 1);
                     max-width: 355px;
                     max-height: 70px;
                     margin-bottom: 95px;
                     text-transform: uppercase;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
         }
@@ -253,6 +263,11 @@
                     max-height: 70px;
                     margin-bottom: 285px;
                     text-transform: uppercase;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
         }
@@ -324,6 +339,11 @@
                     margin-bottom: 145px;
                     text-transform: uppercase;
                     margin-left: 165px;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
 
@@ -385,6 +405,11 @@
                     max-height: 70px;
                     margin-bottom: 170px;
                     text-transform: uppercase;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
         }
@@ -447,6 +472,12 @@
                     margin-bottom: 140px;
                     text-transform: uppercase;
                     margin-left: 165px;
+
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
 
@@ -515,6 +546,12 @@
                     margin-bottom: 270px;
                     text-transform: uppercase;
                     margin-left: 165px;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
+
                 }
             }
 
@@ -577,6 +614,11 @@
                     max-height: 70px;
                     margin-bottom: 300px;
                     text-transform: uppercase;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
         }
@@ -641,6 +683,11 @@
                     margin-bottom: 225px;
                     text-transform: uppercase;
                     margin-left: 165px;
+                    color: $dblue;
+
+                    &:hover {
+                        border-color: transparent;
+                    }
                 }
             }
 
@@ -788,6 +835,7 @@
             .btn {
                 &--about {
                     padding: 25px 20px !important;
+                    width: 100%;
                 }
             }
 
@@ -803,7 +851,7 @@
         }
 
         &--individual {
-            
+
             .disc {
                 &--last {
                     margin-bottom: 50px !important;
@@ -811,13 +859,13 @@
             }
         }
 
-        &--plan{
-            .wrapper{
+        &--plan {
+            .wrapper {
                 display: flex;
                 flex-direction: column;
             }
 
-            .img{
+            .img {
                 width: 100%;
                 height: 50%;
                 margin: 0px;
@@ -840,6 +888,7 @@
         .block {
             margin: 0px;
             padding: 0px;
+            color: rgba(2, 37, 99, 1);
 
             .uptitle {
                 margin: 0px;
@@ -869,9 +918,13 @@
             .btn--about {
                 margin: 0;
                 margin-bottom: 50px;
+                max-width: 100%;
+
             }
 
         }
+
+
 
     }
 
