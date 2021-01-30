@@ -271,6 +271,11 @@
     &__footer {
         display: flex;
         align-items: center;
+
+        @media (max-width: 768px) {
+            margin-top: -80px;
+            margin-bottom: 30px;
+        }
     }
 
     &__arrows {
@@ -281,6 +286,11 @@
         justify-content: space-between;
         margin-right: 90px;
         cursor: pointer;
+
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
 
 

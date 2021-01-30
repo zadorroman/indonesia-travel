@@ -65,6 +65,7 @@
         background-color: $back;
         @include pos($l:0, $b: 11.1vh);
         @include size(100%, auto);
+        z-index: 3;
     }
 
     &__title {

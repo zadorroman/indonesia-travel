@@ -11,6 +11,7 @@ const SOURCES = {
 		'./node_modules/slick-carousel/slick/slick.min.js', //подключение слайдера
 		'./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js', //fancybox js
 		'./node_modules/aos/dist/aos.js', //aos js
+		'./node_modules/isotope-layout/dist/isotope.pkgd.min.js', //isotope
 	]
 };
 
