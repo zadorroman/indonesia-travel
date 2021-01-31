@@ -82,7 +82,7 @@ buttonBook.addEventListener('click', function () {
 		document.getElementById('modal_surname').innerHTML = "Surname:   " + inputSurname.value;
 		document.getElementById('modal_email').innerHTML = "Email:   " + inputEmail.value;
 		document.getElementById('modal_phone').innerHTML = "Number phone:   " + inputPhone.value;
-		// document.getElementById('modal_selectTour').innerText = "Tour:   " + document.querySelector('.__select__title');
+		document.getElementById('modal_selectTour').innerText = "Tour:   " + document.querySelector('.__select__title').innerHTML;
 
 	// }
 
