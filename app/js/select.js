@@ -32,7 +32,7 @@ let inputName = document.getElementById("name");
 let inputSurname = document.getElementById("surname");
 let inputEmail = document.getElementById("email");
 let inputPhone = document.getElementById("phone");
-// let selectTour = document.querySelector('__select__title');
+let selectTour = document.querySelector('.__select__title');
 
 
 
@@ -41,7 +41,7 @@ buttonBook.addEventListener('click', function () {
 	localStorage.setItem("surname", inputSurname.value);
 	localStorage.setItem("email", inputEmail.value);
 	localStorage.setItem("phone", inputPhone.value);
-	// localStorage.setItem("Chosed tour", selectTour.value);
+	localStorage.setItem("Chosed tour", selectTour.value);
 
 
 
@@ -49,6 +49,7 @@ buttonBook.addEventListener('click', function () {
 	let modal_surname = document.createElement('p');
 	let modal_email = document.createElement('p');
 	let modal_phone = document.createElement('p');
+	let modal_selectTour = document.createElement('p');
 
 
 
@@ -60,23 +61,28 @@ buttonBook.addEventListener('click', function () {
 		modal_surname.id = 'modal_surname';
 		modal_email.id = 'modal_email';
 		modal_phone.id = 'modal_phone';
+		modal_selectTour.id = 'modal_selectTour'
 
 		modal_name.className = 'info';
 		modal_surname.className = 'info';
 		modal_email.className = 'info';
 		modal_phone.className = 'info';
+		modal_selectTour.className ='info';
 
 
 		document.querySelector('.my_modal-body').appendChild(modal_name);
 		document.querySelector('.my_modal-body').appendChild(modal_surname);
 		document.querySelector('.my_modal-body').appendChild(modal_email);
 		document.querySelector('.my_modal-body').appendChild(modal_phone);
+		document.querySelector('.my_modal-body').appendChild(modal_selectTour);
+	
 
 
 		document.getElementById('modal_name').innerHTML = "Name:   " + inputName.value;
 		document.getElementById('modal_surname').innerHTML = "Surname:   " + inputSurname.value;
 		document.getElementById('modal_email').innerHTML = "Email:   " + inputEmail.value;
 		document.getElementById('modal_phone').innerHTML = "Number phone:   " + inputPhone.value;
+		// document.getElementById('modal_selectTour').innerText = "Tour:   " + document.querySelector('.__select__title');
 
 	// }
 
