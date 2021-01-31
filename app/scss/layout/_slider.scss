@@ -56,6 +56,10 @@
         height: 390px;
         width: 385px;
         background-color: #fff;
+
+        @media (max-width: 768px) {
+            height: 445px;
+        }
         
 
         &--places{
@@ -96,6 +100,11 @@
         line-height: 34px;
         font-weight: 700;
         margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            padding-top: 20px;
+        }
+
 
         &--places {
             line-height: 28px;
@@ -214,6 +223,11 @@
         white-space: nowrap;
         display: inline-block;
 
+        @media (max-width: 768px) {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
         &--places {
             padding: 25px 45px;
             font-weight: 700;
@@ -257,6 +271,11 @@
     &__footer {
         display: flex;
         align-items: center;
+
+        @media (max-width: 768px) {
+            margin-top: -80px;
+            margin-bottom: 30px;
+        }
     }
 
     &__arrows {
@@ -267,6 +286,11 @@
         justify-content: space-between;
         margin-right: 90px;
         cursor: pointer;
+
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 
 
 
